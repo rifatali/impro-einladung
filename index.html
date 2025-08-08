@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Einladung Impro Theater</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#faf9f7; --ink:#111111; --muted:#5c626a; --card:#ffffff; --accent:#0f766e; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    .wrap { min-height: 100%; display: grid; place-items: center; padding: 20px; }
+    .card { width: 100%; max-width: 560px; background: var(--card); border: 1px solid rgba(0,0,0,.06); border-radius: 18px; padding: 28px; box-shadow: 0 8px 28px rgba(0,0,0,.08); }
+    .brand { font-family: "Playfair Display", serif; font-size: 28px; letter-spacing: .2px; margin: 0 0 12px 0; }
+    .title { font-size: 20px; font-weight: 700; margin: 4px 0 10px 0; }
+    .meta { color: var(--muted); margin: 0 0 18px 0; }
+    .row { display: grid; grid-template-columns: 1fr; gap: 8px; margin: 14px 0; }
+    .label { font-size: 13px; color: var(--muted); margin-bottom: 2px; }
+    .value { font-size: 16px; }
+    .hr { height: 1px; background: rgba(0,0,0,.06); margin: 16px 0; }
+    .note { background: #f2f7f6; border: 1px solid #d7ebe8; color: #0b3c39; border-radius: 12px; padding: 12px; font-size: 14px; line-height: 1.5; } .note p { margin: 0 0 10px 0; }
+    .footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 16px; }
+    @media print {
+      body { background: white; }
+      .card { box-shadow: none; border: 1pt solid #bbb; }
+      a[href]:after { content: ""; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="card" role="main" aria-label="Einladung Impro Theater">
+      <h1 class="brand">Einladung zur Impro Theater Vorstellung</h1>
+
+      <div class="label">Titel der Vorstellung</div>
+      <div class="value">Die zweite Chance</div>
+
+      <div class="row">
+        <div>
+          <div class="label">Datum</div>
+          <div class="value">Samstag, 22. November 2025</div>
+        </div>
+        <div>
+          <div class="label">Beginn</div>
+          <div class="value">20:00 Uhr</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <div class="label">Ort</div>
+          <div class="value">Ratibor Theater</div>
+        </div>
+        <div>
+          <div class="label">Adresse</div>
+          <div class="value">Cuvrystraße 20, Berlin Kreuzberg</div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="note">An der Abendkasse bitte den Nachnamen Rifat nennen.<br>Bitte spätestens 15 Minuten vor Beginn an der Kasse sein, sonst verfällt die Reservierung.<br>Die Kasse öffnet 45 Minuten vor Beginn.</div>
+
+      <div class="footer" style="font-size:14px; font-family:'Playfair Display', serif; font-weight:600;">Viel Freude bei der Vorstellung</div>
+    </main>
+  </div>
+</body>
+</html>
